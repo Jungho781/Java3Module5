@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MovieController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea prefHeight="200.0" prefWidth="200.0" />
+         </children></HBox>
+   </left>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="218.0" layoutY="10.0" />
+            <TextField layoutX="218.0" layoutY="71.0" />
+            <TextField layoutX="219.0" layoutY="130.0" />
+            <Label layoutY="14.0" text="Name" />
+            <Label layoutY="75.0" text="Rating" />
+            <Label layoutY="134.0" text="Description" />
+            <Button fx:id="addEntryButton" layoutX="267.0" layoutY="173.0" mnemonicParsing="false" onAction="#addEntryButtonPressed" text="Add Entry" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Find by rating:" />
+            <TextField />
+            <Button fx:id="findButton" mnemonicParsing="false" onAction="#findButtonPressed" text="Find" />
+            <Button fx:id="browseAllButton" mnemonicParsing="false" onAction="#browseAllButtonPressed" text="Browse All" />
+         </children></HBox>
+   </bottom>
+</BorderPane>
